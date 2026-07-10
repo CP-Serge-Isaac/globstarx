@@ -1,0 +1,81 @@
+/* ══════════════════════════════════════════
+   CONTACT — formulaire net + coordonnées hairline
+══════════════════════════════════════════ */
+.contact-solo {
+  max-width: 720px;
+}
+
+.contact-note {
+  font-size: var(--body-md);
+  line-height: 1.75;
+  color: var(--on-surface-var);
+  max-width: 440px;
+  margin: 16px 0 30px;
+}
+
+/* ── Formulaire ── */
+.form-card {
+  background: var(--surface);
+  border: var(--line);
+  border-radius: var(--r-xl);
+  box-shadow: var(--sh-1);
+  padding: 32px 30px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.fg { margin-bottom: 18px; }
+.fg label {
+  display: block;
+  font-size: var(--label-lg);
+  font-weight: 600;
+  color: var(--on-surface);
+  margin-bottom: 7px;
+}
+.fg input,
+.fg select,
+.fg textarea {
+  width: 100%;
+  font-size: var(--body-md);
+  color: var(--on-surface);
+  background: var(--surf-ct-low);
+  border: var(--line);
+  border-radius: var(--r-md);
+  padding: 12px 14px;
+  transition: border-color var(--dur-1), background var(--dur-1);
+}
+.fg input:focus,
+.fg select:focus,
+.fg textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: var(--surface);
+}
+.fg textarea { min-height: 130px; resize: vertical; }
+.fg ::placeholder { color: var(--outline); }
+
+.form-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--label-lg);
+  font-weight: 600;
+  color: #fff;
+  background: #1FAE55;
+  border-radius: var(--r-md);
+  padding: 0 26px;
+  height: 48px;
+  transition: background var(--dur-1), transform var(--dur-1);
+}
+.form-submit:hover {
+  background: #179547;
+  transform: translateY(-1px);
+}
+.form-submit svg { width: 17px; height: 17px; }
+
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .form-card { padding: 24px 20px; }
+}

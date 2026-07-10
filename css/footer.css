@@ -1,0 +1,98 @@
+/* ══════════════════════════════════════════
+   FOOTER — navy éditorial
+══════════════════════════════════════════ */
+#footer {
+  background: var(--dark);
+  padding: 76px 0 32px;
+}
+
+/* ── Grille ── */
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.1fr;
+  gap: 48px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+/* Marque */
+.footer-brand img {
+  height: 42px;
+  width: auto;
+  margin-bottom: 20px;
+}
+.footer-brand p {
+  font-size: var(--body-md);
+  color: rgba(255,255,255,.55);
+  line-height: 1.8;
+  max-width: 280px;
+}
+
+/* Colonnes */
+.footer-col h4 {
+  font-size: var(--label-md);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+  margin-bottom: 18px;
+}
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.footer-col li {
+  font-size: var(--body-md);
+  color: rgba(255,255,255,.68);
+  line-height: 1.6;
+}
+.footer-col li a {
+  color: rgba(255,255,255,.68);
+  transition: color var(--dur-1);
+}
+.footer-col li a:hover { color: #fff; }
+
+/* ── Barre basse ── */
+.footer-bottom {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer-copy {
+  font-size: var(--body-sm);
+  color: rgba(255,255,255,.45);
+}
+.footer-copy strong { color: rgba(255,255,255,.8); font-weight: 600; }
+
+/* Icônes officielles */
+.footer-socials {
+  display: flex;
+  gap: 10px;
+}
+.fsoc {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform var(--dur-1), filter var(--dur-1);
+}
+.fsoc svg { width: 18px; height: 18px; }
+.fsoc:hover { transform: translateY(-2px); filter: brightness(1.1); }
+.fsoc-fb { background: #1877F2; }
+.fsoc-wa { background: #25D366; }
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+@media (max-width: 600px) {
+  .footer-top { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}

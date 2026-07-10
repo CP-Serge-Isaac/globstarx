@@ -1,0 +1,91 @@
+/* ══════════════════════════════════════════
+   DESIGN TOKENS — GlobStar X
+   Corporate épuré : typo modérée, blanc, un accent
+══════════════════════════════════════════ */
+:root {
+  /* ── Brand ── */
+  --brand-cyan:  #00A8CC;
+  --brand-blue:  #1266C2;
+  --star:        #F5B301;
+
+  /* ── Primary ── */
+  --primary:           #1266C2;
+  --primary-d:         #0F58A8;
+  --on-primary:        #FFFFFF;
+  --primary-container: #EAF2FB;
+  --on-primary-ct:     #0A3D75;
+
+  /* ── Encres & surfaces ── */
+  --on-surface:        #16222E;
+  --on-surface-var:    #55636F;
+  --mono-ink:          #55636F;
+
+  --surface:           #FFFFFF;
+  --surf-ct-low:       #F7F9FB;
+  --surf-ct:           #EFF3F6;
+  --surf-ct-high:      #E7ECF0;
+
+  /* ── Bordures ── */
+  --outline:           #9AA7B2;
+  --outline-var:       #E8ECEF;
+  --line:              1px solid #E8ECEF;
+
+  /* ── Sombre ── */
+  --dark:  #0B2239;
+  --dark2: #10304F;
+
+  /* ── Typography ── */
+  --font:         'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  /* ── Type scale : modérée ── */
+  --display-lg:    clamp(2.15rem, 4.2vw, 3.3rem);
+  --display-md:    clamp(1.9rem, 3.4vw, 2.6rem);
+  --display-sm:    clamp(1.5rem, 2.5vw, 1.9rem);
+  --headline-lg:   clamp(1.4rem, 2.4vw, 1.7rem);
+  --headline-sm:   1.35rem;
+  --title-lg:      1.25rem;
+  --title-md:      1rem;
+  --title-sm:      .875rem;
+  --label-lg:      .875rem;
+  --label-md:      .75rem;
+  --body-lg:       1.02rem;
+  --body-md:       .9rem;
+  --body-sm:       .8rem;
+
+  /* ── Shapes ── */
+  --r-xs:   4px;
+  --r-sm:   6px;
+  --r-md:   8px;
+  --r-lg:   12px;
+  --r-xl:   16px;
+  --r-2xl:  20px;
+  --r-full: 9999px;
+
+  /* ── Shadows : douces, discrètes ── */
+  --sh-1: 0 1px 2px rgba(22,34,46,.05);
+  --sh-2: 0 2px 8px rgba(22,34,46,.05), 0 10px 28px rgba(22,34,46,.06);
+  --sh-3: 0 4px 12px rgba(22,34,46,.06), 0 20px 48px rgba(22,34,46,.09);
+  --sh-c: 0 2px 8px rgba(18,102,194,.2);
+
+  /* ── Motion ── */
+  --ease-std:  cubic-bezier(.2,0,0,1);
+  --ease-dec:  cubic-bezier(0,0,0,1);
+  --dur-1: 180ms;
+  --dur-2: 260ms;
+  --dur-3: 360ms;
+  --dur-4: 440ms;
+
+  /* ── Layout ── */
+  --nav-h:    72px;
+  --max-w:    1140px;
+  --pad-x:    28px;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --pad-x: 20px;
+    --nav-h: 62px;
+  }
+}
