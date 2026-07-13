@@ -5,7 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GlobStar X SARL — Informatique, Imprimerie &amp; Équipement à Ouagadougou</title>
   <meta name="description" content="GlobStar X SARL accompagne les entreprises et institutions au Burkina Faso : solutions informatiques, imprimerie professionnelle et fourniture d'équipements." />
-  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="canonical" href="https://globstarx.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_BF" />
+  <meta property="og:site_name" content="GlobStar X" />
+  <meta property="og:title" content="GlobStar X — Technologie, impression &amp; équipement" />
+  <meta property="og:description" content="Un partenaire unique à Ouagadougou pour vos solutions IT, impressions professionnelles et équipements." />
+  <meta property="og:url" content="https://globstarx.com/" />
+  <meta property="og:image" content="https://globstarx.com/img/hero-bg.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#071C35" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png" />
   <link rel="apple-touch-icon" href="img/icon-192.png" />
@@ -20,6 +29,23 @@
   <link rel="stylesheet" href="css/services.css" />
   <link rel="stylesheet" href="css/contact.css" />
   <link rel="stylesheet" href="css/footer.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "GlobStar X SARL",
+      "url": "https://globstarx.com/",
+      "logo": "https://globstarx.com/img/logo-mark.png",
+      "telephone": "+22665294542",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ouagadougou",
+        "addressCountry": "BF"
+      },
+      "areaServed": "Burkina Faso",
+      "sameAs": ["https://www.facebook.com/share/197fRiGLvC/"]
+    }
+  </script>
 </head>
 <body data-en-title="GlobStar X SARL — IT, Printing &amp; Equipment in Ouagadougou">
 
@@ -53,28 +79,55 @@
 
 <!-- ════ HERO ════ -->
 <section id="hero">
-  <div class="hero-bg" aria-hidden="true">
-    <img src="img/hero-bg.webp" alt="" width="1600" height="800" fetchpriority="high" />
-  </div>
+  <div class="hero-aurora" aria-hidden="true"></div>
   <div class="container hero-inner">
-    <div class="hero-pill">
-      <span class="hero-pill-dot" aria-hidden="true"></span>
-      <span data-i18n="hero.pill">GlobStar X · Ouagadougou</span>
+    <div class="hero-copy">
+      <div class="hero-pill">
+        <span class="hero-pill-dot" aria-hidden="true"></span>
+        <span data-i18n="hero.pill">Ingénierie locale · Impact durable</span>
+      </div>
+      <h1 class="hero-h1" data-i18n="hero.h1">
+        Tout ce qu'il faut pour faire <span>avancer votre entreprise.</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">
+        Technologie, impression et équipement professionnel réunis dans une seule équipe à Ouagadougou. Du conseil à la livraison, nous rendons vos projets plus simples.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-filled">
+          <span data-i18n="hero.cta1">Parler de votre projet</span>
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#services" class="link-arrow link-light"><span data-i18n="hero.cta2">Découvrir nos expertises</span> <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
     </div>
-    <h1 class="hero-h1" data-i18n="hero.h1">
-      Votre réseau, vos impressions,<br />votre matériel.
-    </h1>
-    <p class="hero-sub" data-i18n="hero.sub">
-      GlobStar X installe et maintient l'informatique des entreprises à Ouagadougou,
-      imprime leurs supports de communication et fournit leur équipement de bureau.
-      Un seul interlocuteur, du devis à la livraison.
-    </p>
-    <div class="hero-ctas">
-      <a href="#contact" class="btn btn-filled">
-        <span data-i18n="hero.cta1">Demander un devis</span>
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a href="#services" class="link-arrow link-light"><span data-i18n="hero.cta2">Voir nos services</span> <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+
+    <div class="hero-visual" aria-label="Aperçu des expertises GlobStar X">
+      <div class="visual-grid" aria-hidden="true"></div>
+      <div class="visual-card visual-main">
+        <div class="visual-head">
+          <div><span class="visual-kicker">GLOBSTAR X</span><strong data-i18n="hero.board">Votre projet, bien piloté</strong></div>
+          <span class="live-dot"><i></i><span data-i18n="hero.active">Disponible</span></span>
+        </div>
+        <div class="visual-orbit" aria-hidden="true">
+          <div class="orbit-core"><img src="img/logo-mark.png" alt="" width="60" height="60" /></div>
+          <div class="orbit-node node-it"><span>IT</span></div>
+          <div class="orbit-node node-print"><span>CMJN</span></div>
+          <div class="orbit-node node-equip"><span>PRO</span></div>
+        </div>
+        <div class="visual-services">
+          <a href="informatique.html"><i class="service-signal signal-blue"></i><span data-i18n="srv.short1">Solutions IT</span><strong>01</strong></a>
+          <a href="imprimerie.html"><i class="service-signal signal-violet"></i><span data-i18n="srv.short2">Impression</span><strong>02</strong></a>
+          <a href="equipement.html"><i class="service-signal signal-gold"></i><span data-i18n="srv.short3">Équipement</span><strong>03</strong></a>
+        </div>
+      </div>
+      <div class="float-card float-quote">
+        <span class="float-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+        <span><small data-i18n="hero.quoteLabel">Engagement</small><strong data-i18n="hero.quoteValue">Devis sous 48 h</strong></span>
+      </div>
+      <div class="float-card float-location">
+        <span class="location-pin"><i></i></span>
+        <span><small data-i18n="hero.locationLabel">Notre terrain</small><strong data-i18n="hero.locationValue">Burkina Faso</strong></span>
+      </div>
     </div>
   </div>
 </section>
@@ -82,6 +135,7 @@
 <!-- ════ ENGAGEMENTS ════ -->
 <section class="section-sm" id="promesses">
   <div class="container">
+    <p class="proof-intro" data-i18n="pr.intro">Pensé pour les entreprises, ONG et institutions qui veulent avancer sans multiplier les prestataires.</p>
     <ul class="proof-bar">
       <li class="rv" style="transition-delay:.02s">
         <div class="proof-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
@@ -147,6 +201,7 @@
     <div class="section-head rv">
       <div class="eyebrow" data-i18n="srv.eyebrow">Nos services</div>
       <h2 class="display-sm" data-i18n="srv.h2">Ce que nous faisons <span class="grad-text">pour vous</span></h2>
+      <p class="section-sub" data-i18n="srv.intro">Trois expertises qui se complètent, une exigence commune : des solutions fiables, soignées et adaptées à votre réalité.</p>
     </div>
 
     <div class="feat-rows">
@@ -208,8 +263,18 @@
 <section id="contact" class="section">
   <div class="container">
     <div class="contact-solo">
+      <aside class="contact-aside rv-l">
+        <div>
+          <div class="eyebrow eyebrow-light" data-i18n="ct.eyebrow">Contact</div>
+          <h2 class="display-sm" data-i18n="ct.asideTitle">Un projet en tête ?<br />Construisons-le ensemble.</h2>
+          <p data-i18n="ct.asideText">Expliquez-nous votre besoin. Un membre de l'équipe vous répond personnellement et vous guide vers la bonne solution.</p>
+        </div>
+        <div class="contact-direct">
+          <a href="tel:+22665294542"><span data-i18n="ct.call">Appelez-nous</span><strong>+226 65 29 45 42</strong></a>
+          <a href="https://wa.me/22660967182" target="_blank" rel="noopener"><span>WhatsApp</span><strong>+226 60 96 71 82</strong></a>
+        </div>
+      </aside>
       <div class="contact-form-wrap rv-l">
-        <div class="eyebrow" data-i18n="ct.eyebrow">Contact</div>
         <h2 class="display-sm" data-i18n="ct.h2">Dites-nous ce qu'il vous faut</h2>
         <p class="contact-note" data-i18n="ct.note">Décrivez votre besoin : votre message nous arrive directement sur WhatsApp et nous revenons vers vous avec un devis sous 48 h.</p>
         <div class="form-card">

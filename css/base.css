@@ -13,6 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.65;
+  text-rendering: optimizeLegibility;
 }
 ::selection { background: rgba(18,102,194,.15); }
 a  { color: inherit; text-decoration: none; }
@@ -31,7 +32,7 @@ input, textarea, select { font-family: inherit; }
   margin: 0 auto;
   padding: 0 var(--pad-x);
 }
-.section    { padding: 96px 0; }
+.section    { padding: 120px 0; }
 .section-sm { padding: 60px 0; }
 .section-alt { background: var(--surf-ct-low); }
 
@@ -55,7 +56,7 @@ input, textarea, select { font-family: inherit; }
   font-size: var(--display-sm);
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.012em;
+  letter-spacing: -0.028em;
 }
 
 /* ── Kicker : discret, sans trait ── */
@@ -69,7 +70,12 @@ input, textarea, select { font-family: inherit; }
   margin-bottom: 14px;
 }
 
-.grad-text { color: var(--primary); }
+.grad-text {
+  color: transparent;
+  background: linear-gradient(100deg, var(--primary), var(--brand-violet));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 
 /* ── Tête de section ── */
 .section-head { max-width: 620px; margin-bottom: 52px; }
@@ -92,12 +98,14 @@ input, textarea, select { font-family: inherit; }
   font-weight: 600;
   padding: 0 26px;
   height: 48px;
-  border-radius: var(--r-md);
+  border-radius: var(--r-full);
   border: 1px solid transparent;
   cursor: pointer;
   transition: background var(--dur-1) var(--ease-std),
               color var(--dur-1) var(--ease-std),
-              border-color var(--dur-1) var(--ease-std);
+              border-color var(--dur-1) var(--ease-std),
+              transform var(--dur-1) var(--ease-std),
+              box-shadow var(--dur-1) var(--ease-std);
   white-space: nowrap;
   text-decoration: none;
 }
@@ -107,7 +115,7 @@ input, textarea, select { font-family: inherit; }
   background: var(--primary);
   color: #fff;
 }
-.btn-filled:hover { background: var(--primary-d); }
+.btn-filled:hover { background: var(--primary-d); transform: translateY(-2px); box-shadow: 0 12px 24px rgba(23,105,224,.2); }
 
 .btn-ghost {
   background: transparent;

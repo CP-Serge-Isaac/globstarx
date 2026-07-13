@@ -9,15 +9,19 @@
     'bc.home': 'Home',
 
     /* ── Accueil ── */
-    'hero.pill': 'GlobStar X · Ouagadougou',
-    'hero.h1': 'Your network, your printing,<br />your equipment.',
-    'hero.sub': 'GlobStar X installs and maintains company IT in Ouagadougou, prints business communication materials and supplies office equipment. One point of contact, from quote to delivery.',
-    'hero.cta1': 'Request a quote',
-    'hero.cta2': 'See our services',
+    'hero.pill': 'Local engineering · Lasting impact',
+    'hero.h1': 'Everything you need to move <span>your business forward.</span>',
+    'hero.sub': 'Technology, printing and professional equipment brought together by one team in Ouagadougou. From advice to delivery, we make your projects simpler.',
+    'hero.cta1': 'Discuss your project',
+    'hero.cta2': 'Explore our expertise',
+    'hero.board': 'Your project, well managed', 'hero.active': 'Available',
+    'hero.quoteLabel': 'Commitment', 'hero.quoteValue': 'Quote within 48 h',
+    'hero.locationLabel': 'Our field', 'hero.locationValue': 'Burkina Faso',
 
     'pr.1t': 'Quote within 48 h', 'pr.1d': 'Send us your need, we price it fast.',
     'pr.2t': 'On-site service', 'pr.2d': 'In Ouagadougou and the regions.',
     'pr.3t': 'Warranty &amp; after-sales', 'pr.3d': 'We stay around after delivery.',
+    'pr.intro': 'Built for businesses, NGOs and institutions that want to move forward without juggling multiple vendors.',
 
     'about.eyebrow': 'Who we are',
     'about.h2': 'A team of engineers,<br /><span class="grad-text">based in Ouagadougou</span>',
@@ -29,6 +33,8 @@
 
     'srv.eyebrow': 'Our services',
     'srv.h2': 'What we do <span class="grad-text">for you</span>',
+    'srv.intro': 'Three complementary areas of expertise, one shared standard: reliable, polished solutions tailored to your reality.',
+    'srv.short1': 'IT solutions', 'srv.short2': 'Printing', 'srv.short3': 'Equipment',
     'srv.1t': 'An IT setup that just works, every day',
     'srv.1s': 'Cabling, networks, servers, troubleshooting: our engineers design your installation and keep it running. We also build your websites and management applications.',
     'srv.1a': 'Networks &amp; infrastructure', 'srv.1b': 'Web &amp; application development', 'srv.1c': 'Maintenance &amp; support',
@@ -43,6 +49,9 @@
     'srv.3l': 'See the Equipment division',
 
     'ct.eyebrow': 'Contact',
+    'ct.asideTitle': 'Have a project in mind?<br />Let\'s build it together.',
+    'ct.asideText': 'Tell us what you need. A member of our team will personally reply and guide you towards the right solution.',
+    'ct.call': 'Call us',
     'ct.h2': 'Tell us what you need',
     'ct.note': 'Describe your need: your message reaches us directly on WhatsApp and we come back to you with a quote within 48 h.',
     'ct.lName': 'Name', 'ct.lTel': 'Phone', 'ct.lService': 'Service', 'ct.lMsg': 'Message',
