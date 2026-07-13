@@ -61,13 +61,18 @@ input, textarea, select { font-family: inherit; }
 
 /* ── Kicker : discret, sans trait ── */
 .eyebrow {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 11px;
+  border-radius: 10px 16px 16px 16px;
+  background: var(--primary-container);
   font-size: var(--label-md);
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--primary);
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .grad-text {
@@ -78,7 +83,7 @@ input, textarea, select { font-family: inherit; }
 }
 
 /* ── Tête de section ── */
-.section-head { max-width: 620px; margin-bottom: 52px; }
+.section-head { max-width: 720px; margin-bottom: 60px; }
 .section-sub {
   font-size: var(--body-lg);
   line-height: 1.75;
@@ -135,7 +140,7 @@ input, textarea, select { font-family: inherit; }
   font-size: var(--label-lg);
   font-weight: 600;
   color: var(--primary);
-  transition: gap var(--dur-1) var(--ease-std);
+  transition: gap var(--dur-1) var(--ease-std), color var(--dur-1);
 }
 .link-arrow svg { width: 15px; height: 15px; }
 .link-arrow:hover { gap: 11px; }

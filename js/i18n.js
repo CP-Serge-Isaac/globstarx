@@ -16,6 +16,7 @@
     'hero.cta2': 'Explore our expertise',
     'hero.board': 'Your project, well managed', 'hero.active': 'Available',
     'hero.quoteLabel': 'Commitment', 'hero.quoteValue': 'Quote within 48 h',
+    'hero.badgeExpertise': 'areas of expertise together',
     'hero.locationLabel': 'Our field', 'hero.locationValue': 'Burkina Faso',
 
     'pr.1t': 'Quote within 48 h', 'pr.1d': 'Send us your need, we price it fast.',

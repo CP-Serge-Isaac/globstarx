@@ -11,13 +11,15 @@
 
 .about-photo {
   position: relative;
-  border-radius: var(--r-2xl);
+  border-radius: 56px 18px 56px 56px;
   overflow: hidden;
-  box-shadow: var(--sh-3);
+  box-shadow: 18px 18px 0 #d8f1f4;
 }
 .about-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   display: block;
   filter: saturate(.92);
 }
@@ -50,10 +52,12 @@
   align-items: flex-start;
   padding: 24px;
   border: 1px solid var(--outline-var);
-  border-radius: var(--r-xl);
-  background: #fff;
+  border-radius: 28px;
+  background: #f2f6ff;
   transition: transform var(--dur-2), box-shadow var(--dur-2);
 }
+.about-value:nth-child(2) { background: #f1edff; border-radius: 14px 34px 34px 34px; }
+.about-value:nth-child(3) { background: #fff3dc; }
 .about-value:hover { transform: translateY(-3px); box-shadow: var(--sh-2); }
 .about-value-icon {
   width: 42px;

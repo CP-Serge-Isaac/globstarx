@@ -13,7 +13,7 @@
   --primary:           #1769E0;
   --primary-d:         #1056BE;
   --on-primary:        #FFFFFF;
-  --primary-container: #EAF2FB;
+  --primary-container: #E3ECFF;
   --on-primary-ct:     #0A3D75;
 
   /* ── Encres & surfaces ── */
@@ -22,9 +22,9 @@
   --mono-ink:          #55636F;
 
   --surface:           #FFFFFF;
-  --surf-ct-low:       #F7F9FB;
-  --surf-ct:           #EFF3F6;
-  --surf-ct-high:      #E7ECF0;
+  --surf-ct-low:       #F7F6FF;
+  --surf-ct:           #EFF2FA;
+  --surf-ct-high:      #E5EAF3;
 
   /* ── Bordures ── */
   --outline:           #9AA7B2;
@@ -37,7 +37,7 @@
 
   /* ── Typography ── */
   --font:         'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-display: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-mono:    'JetBrains Mono', ui-monospace, monospace;
 
   /* ── Type scale : modérée ── */
@@ -59,9 +59,9 @@
   --r-xs:   4px;
   --r-sm:   6px;
   --r-md:   8px;
-  --r-lg:   14px;
-  --r-xl:   20px;
-  --r-2xl:  28px;
+  --r-lg:   18px;
+  --r-xl:   28px;
+  --r-2xl:  40px;
   --r-full: 9999px;
 
   /* ── Shadows : douces, discrètes ── */

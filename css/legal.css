@@ -2,13 +2,18 @@
    LEGAL — Pages politique & conditions
 ══════════════════════════════════════════ */
 .legal-main {
-  padding: calc(var(--nav-h) + 64px) 0 96px;
+  padding: calc(var(--nav-h) + 94px) 0 110px;
   min-height: 70vh;
+  background: #f7f6ff;
 }
 .legal-container {
   max-width: 820px;
   margin: 0 auto;
-  padding: 0 var(--pad-x);
+  padding: 54px clamp(24px, 6vw, 72px);
+  border: 1px solid var(--outline-var);
+  border-radius: 48px 18px 48px 48px;
+  background: #fff;
+  box-shadow: var(--sh-2);
 }
 .legal-main h1 {
   font-family: var(--font-display);
