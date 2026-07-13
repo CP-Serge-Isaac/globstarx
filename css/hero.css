@@ -31,8 +31,8 @@
 .hero-pill-dot { width: 8px; height: 8px; border-radius: 50%; background: #0c8c9d; box-shadow: 0 0 0 5px rgba(12,140,157,.12); }
 .hero-h1 {
   max-width: 620px; margin-bottom: 26px;
-  font-family: var(--font-display); font-size: clamp(3.6rem, 6vw, 6.15rem); font-weight: 800;
-  line-height: .94; letter-spacing: -.072em; color: #102b45;
+  font-family: var(--font-display); font-size: clamp(3rem, 4.8vw, 4.45rem); font-weight: 800;
+  line-height: 1.02; letter-spacing: -.055em; color: #102b45;
 }
 .hero-h1 span { color: #395dd8; }
 .hero-sub { max-width: 570px; margin-bottom: 35px; color: #50677c; font-size: clamp(1rem, 1.3vw, 1.12rem); line-height: 1.75; }
@@ -64,10 +64,10 @@
 
 #promesses { background: #fff; }
 .proof-intro { max-width: 760px; margin: 0 auto 40px; text-align: center; color: var(--on-surface-var); font-size: var(--body-md); }
-.proof-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.proof-bar li { min-height: 132px; display: flex; gap: 15px; align-items: flex-start; padding: 24px; border-radius: 30px; background: #edf6ff; }
-.proof-bar li:nth-child(2) { background: #f0edff; border-radius: 16px 38px 38px 38px; }
-.proof-bar li:nth-child(3) { background: #fff2d8; }
+.proof-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--outline-var); }
+.proof-bar li { min-height: 110px; display: flex; gap: 15px; align-items: flex-start; padding: 26px 30px 0; }
+.proof-bar li:first-child { padding-left: 0; }
+.proof-bar li + li { border-left: 1px solid var(--outline-var); }
 .proof-icon { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border-radius: 16px; background: #fff; color: var(--primary); }
 .proof-icon svg { width: 21px; height: 21px; }
 .proof-bar h3 { font-family: var(--font-display); font-size: var(--title-md); font-weight: 800; color: var(--on-surface); margin-bottom: 4px; }
@@ -79,10 +79,12 @@
   .hero-copy { max-width: 720px; }
   .hero-visual { width: min(100%, 720px); }
   .proof-bar { grid-template-columns: 1fr; }
+  .proof-bar li, .proof-bar li:first-child { padding: 22px 0 0; }
+  .proof-bar li + li { border-left: 0; border-top: 1px solid var(--outline-var); }
 }
 @media (max-width: 600px) {
   #hero { padding: calc(var(--nav-h) + 72px) 0 74px; }
-  .hero-h1 { font-size: clamp(3.25rem, 15vw, 4.2rem); }
+  .hero-h1 { font-size: clamp(2.7rem, 12vw, 3.35rem); }
   .hero-ctas { align-items: flex-start; flex-direction: column; }
   .hero-image-shell { border-radius: 48px 18px 48px 48px; box-shadow: 12px 13px 0 #d7e5ff; aspect-ratio: 1 / 1; }
   .badge-top { right: -5px; top: -22px; }

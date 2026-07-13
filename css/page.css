@@ -34,7 +34,7 @@
 .page-hero h1 {
   font-family: var(--font-display);
   font-size: var(--display-md);
-  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  font-size: clamp(2.35rem, 4vw, 3.45rem);
   font-weight: 800;
   line-height: 1.02;
   letter-spacing: -.055em;
@@ -67,24 +67,21 @@
 .offers-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px;
+  gap: 34px 56px;
 }
 .offer-card {
-  background: #edf5ff;
-  border: var(--line);
-  border-radius: 36px;
-  padding: 34px 30px;
-  transition: box-shadow var(--dur-2) var(--ease-std), transform var(--dur-2) var(--ease-std);
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--outline-var);
+  border-radius: 0;
+  padding: 28px 0 0;
 }
-.offer-card:nth-child(2) { background: #f1edff; border-radius: 16px 42px 42px 42px; }
-.offer-card:nth-child(3) { background: #fff2da; border-radius: 42px 42px 16px 42px; }
-.offer-card:nth-child(4) { background: #e9f7f4; }
-.offer-card:hover { box-shadow: var(--sh-2); transform: translateY(-4px); }
+.offer-card:nth-child(2), .offer-card:nth-child(3), .offer-card:nth-child(4) { background: transparent; border-radius: 0; }
 .offer-icon {
   width: 44px;
   height: 44px;
-  border-radius: 16px;
-  background: #fff;
+  border-radius: 0;
+  background: transparent;
   color: var(--primary);
   display: flex;
   align-items: center;
